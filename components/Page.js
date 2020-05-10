@@ -5,7 +5,7 @@ const Page = ({ props }) => {
 };
 
 export async function getStaticProps() {
-  let props = {};
+  let props = { car: "bmw" };
   if (Component.getInitalProps) {
     props = await Component.getInitalProps(ctx);
   }
