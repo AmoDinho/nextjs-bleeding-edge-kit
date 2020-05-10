@@ -1,9 +1,9 @@
 import App from "next/app";
 import React from "react";
 import { ApolloProvider } from "@apollo/react-hooks";
-import withApollo from "../lib/withApollo";
+import { withApollo } from "../lib/apollo";
 import Page from "../components/Page";
-
+import "../styles/index.css";
 class MyApp extends App {
   static displayName = "Bleeding Edge";
 

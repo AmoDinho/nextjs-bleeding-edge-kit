@@ -1,11 +1,10 @@
 import React from "react";
-
 const Page = ({ props }) => {
   <>{props.children}</>;
 };
 
 export async function getStaticProps() {
-  let props = { car: "bmw" };
+  let props = {};
   if (Component.getInitalProps) {
     props = await Component.getInitalProps(ctx);
   }
